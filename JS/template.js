@@ -1,17 +1,16 @@
 let frutas = [
-    {nombre: "Anana", precio: 1600, img: "img/assets/Anana"},
-    {nombre: "Manzana", precio: 900, img: "img/assets/Manzana"},
-    {nombre: "Durazno", precio: 1500, img: "img/assets/Durazno"},
-    {nombre: "Papa", precio: 950, img: "img/assets/Papa"},
-    {nombre: "Zanahoria", precio: 1200, img: "img/assets/Zanahoria"},
-    {nombre: "Tomate", precio: 1000, img: "img/assets/Tomate"},
-    {nombre: "Anana", precio: 1600, img: ".img/assets/Anana"},
-    {nombre: "Manzana", precio: 900, img: ".img/assets/Manzana"},
-    {nombre: "Durazno", precio: 1500, img: "img/assets/Durazno"},
-    {nombre: "Papa", precio: 950, img: "img/assets/Papa"},
-    {nombre: "Zanahoria", precio: 1200, img: "img/assets/Zanahoria"},
-    {nombre: "Tomate", precio: 1000, img: "img/assets/Tomate"},
-    
+    {nombre: "Anana", precio: 1600, img: "img/assets/anana"},
+    {nombre: "Manzana", precio: 900, img: "img/assets/manzana"},
+    {nombre: "Durazno", precio: 1500, img: "img/assets/durazno"},
+    {nombre: "Papa", precio: 950, img: "img/assets/papa"},
+    {nombre: "Zanahoria", precio: 1200, img: "img/assets/zanahoria"},
+    {nombre: "Tomate", precio: 1000, img: "img/assets/tomate"},
+    {nombre: "Espinaca", precio: 1100, img: "img/assets/espinaca"},
+    {nombre: "Brócoli", precio: 1300, img: "img/assets/brocoli"}, 
+    {nombre: "Naranja", precio: 800, img: "img/assets/naranja"},  
+    {nombre: "Uva", precio: 1700, img: "img/assets/uva"},         
+    {nombre: "Lechuga", precio: 850, img: "img/assets/lechuga"},  
+    {nombre: "Cebolla", precio: 900, img: "img/assets/cebolla"}   
 ];
 
 let conteinerCards = document.querySelector("#container");
