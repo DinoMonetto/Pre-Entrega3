@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5399b9; 
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cont {
+    max-width: 600px; 
+    margin: 50px auto; 
+    padding: 20px;
+    border-radius: 10px; 
+    background-color: white; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+
+.register{
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.login {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; 
+}
