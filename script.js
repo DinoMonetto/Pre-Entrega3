@@ -1,5 +1,9 @@
 // Array para almacenar usuarios y contraseñas
-let usuario = [];
+let usuario = [{
+    "username": "rulo19",
+    "password": "123"
+}  
+];
 // Con esto hago que el form Register no se vea hasta que haga clic en crear nuevo usuario
 document.getElementById('showRegisterForm').addEventListener('click', () => {
     document.querySelector('.login').style.display = 'none';
@@ -19,15 +23,12 @@ document.querySelector(".login").addEventListener("submit", (e) => {
     // Busca el usuario en el array
     let user = usuario.find(user => user.username === username && user.password === password);
     
-    if (user) {
-        alert("Inicio de sesión exitoso!");
-        
-        // Redirige a ./pages/cards.html
-        window.location.href = "./pages/cards.html";
-    } else {
-        alert("Usuario o contraseña incorrectas. Intenta de nuevo.");
-    }
-    
+    user ? ( alert("Inicio de sesión exitoso!"), window.location.href = "./pages/cards.html") 
+    : alert("Usuario o contraseña incorrectas. Intenta de nuevo.");
+
+    // Use el operador ternario para probarlo mas que nada
+    // se que al tener 2 lineas la primer condicion es mejor utilizar el If Else
+
     // Mostrar contenido del array en consola
     console.log("Contenido:", JSON.stringify(usuario, null, 2));
 });
@@ -62,4 +63,23 @@ document.querySelector(".register").addEventListener("submit", (event) => {
     // Mostrar contenido en la consola
     console.log("Contenido:", JSON.stringify(usuario, null, 2));
 });
+
+
+let frutas = [
+    {nombre: "Anana", precio: 1600, img: ".img/assets/Anana"},
+    {nombre: "Manzana", precio: 900, img: ".img/assets/Manzana"},
+    {nombre: "Durazno", precio: 1500, img: ".img/assets/Durazno"}
+];
+
+
+
+let conteinerCards = document.querySelector("#containerCards")
+
+frutas.forEach((fruta)=> {
+    clon = document-querySelector(".Template)").content.cloneNode(true)
+    clon.querySelector("h5").innerText = `${fruta.nombre}`
+    clon.querySelector("p").innerText = `${fruta.precio}`
+    clon.querySelector("img").src = `${fruta.img}`
+    })
+
 
