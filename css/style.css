@@ -59,3 +59,40 @@ input[type="submit"]:hover {
 footer {
     text-align: center;
 }
+
+.custom-card {
+    background-color: #333;
+    border: 2px solid black; 
+}
+
+.custom-card .card-body {
+    background-color: #333; 
+    color: white; 
+}
+
+.custom-card {
+    background-color: #dff0f7; 
+    border: 2px solid black; 
+}
+
+.custom-card .card-body {
+    background-color: #dff0f7; 
+    color: black; 
+}
+
+.custom-card button {
+    background-color: #87CEEB;
+    border: 1px solid black; 
+    color: black; 
+}
+
+.custom-card button:hover {
+    background-color: #5F9EA0; 
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px;
+    padding: 40px 0;}

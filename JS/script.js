@@ -64,22 +64,3 @@ document.querySelector(".register").addEventListener("submit", (event) => {
     console.log("Contenido:", JSON.stringify(usuario, null, 2));
 });
 
-
-let frutas = [
-    {nombre: "Anana", precio: 1600, img: ".img/assets/Anana"},
-    {nombre: "Manzana", precio: 900, img: ".img/assets/Manzana"},
-    {nombre: "Durazno", precio: 1500, img: ".img/assets/Durazno"}
-];
-
-
-
-let conteinerCards = document.querySelector("#containerCards")
-
-frutas.forEach((fruta)=> {
-    clon = document-querySelector(".Template)").content.cloneNode(true)
-    clon.querySelector("h5").innerText = `${fruta.nombre}`
-    clon.querySelector("p").innerText = `${fruta.precio}`
-    clon.querySelector("img").src = `${fruta.img}`
-    })
-
-
